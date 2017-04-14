@@ -1,0 +1,15 @@
+<ion-view view-title="Noticias estudiantes">
+
+  <ion-nav-buttons side="right">
+    <a class="button button-icon icon ion-ios-plus-outline" ng-click="openModal()"></a>
+  </ion-nav-buttons>
+
+  <ion-content>
+    <div class="list card" ng-repeat="item in news" ng-click="goToDetail(item)">
+      <div class="item item-body">
+        <h2> {{ item.title }}</h2>
+        <img class="full-image" ng-src="{{ item.urlToImage }}">
+      </div>
+    </div>
+  </ion-content>
+</ion-view>
